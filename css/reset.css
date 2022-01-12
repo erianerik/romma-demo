@@ -1,3 +1,12 @@
+:root {
+    --background-color-black: #2e2e2e;
+    --color-gray-200: #929493;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-white-400: rgb(214, 214, 214);
+    --color-red-100: #f47c80;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,10 +18,13 @@ img {
 }
 
 html, body {
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-}
+    background-color: var(--background-color-black);
+    color: var(--color-white);
 
+}
+    
 ul {
     list-style: none;
 }
@@ -20,4 +32,17 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.button-pattern {
+    display: block;
+    padding: 1em 2em;
+    background-color: var(--color-red-100);
+    color: var(--color-white-400);
+}
+
+.button-outline {
+    background: transparent;
+    border: 2px solid var(--color-red-100);
+
 }
